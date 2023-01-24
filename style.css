@@ -1,0 +1,197 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: arial;
+}
+
+* a {
+  text-decoration: none;
+}
+
+* li {
+  list-style: none;
+}
+
+.container {
+  min-height: 120vh;
+  padding-bottom: 50px;
+  margin: 0 auto;
+  position: relative;
+}
+body{
+  background-image: linear-gradient(
+    to bottom,
+   #f8b516 0%,
+   #f8b516 25%,
+   #fff 25%,
+   #fff 100%
+  );
+}
+
+.bg {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+  color: #fff;
+}
+
+.navBar {
+  display: flex;
+  width: 85%;
+  justify-content: space-between;
+  margin: 0 auto;
+  align-items: center;
+  height: 15vh;
+}
+
+.navBar ul {
+  display: flex;
+  align-items: center;
+}
+
+.navBar ul li {
+  padding: 0 25px;
+}
+
+.navBar ul li a {
+  font-size: 1rem;
+  color: #fff;
+  font-weight: 400;
+  letter-spacing: 1.5px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  position: absolute;
+  top: 15%;
+  left: 100%;
+  transform: translate(-120%, -50%);
+  align-items: center;
+}
+
+.khonkaen {
+  color: rgb(0, 0, 0);
+  padding: 100px;
+}
+.slide h2 {
+  color: #f8b516;
+  position: absolute;
+  bottom: 25px;
+  left: 25px;
+  font-size: 1.6rem;
+  letter-spacing: 1px;
+}
+
+.slide .box1,
+.box2,
+.box3,
+.box4 {
+  width: 50%;
+  height: 40%;
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  display: center;
+  top: 40%;
+  left: 25%;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.box1 {
+  
+  background-image: url("https://d36tnp772eyphs.cloudfront.net/blogs/1/2019/05/Phra-That-Kaen-Nakhon-Temple-in-Khon-Kaen-Thailand.jpg");
+}
+
+.box2 {
+  background-image: url("https://www.thailandexhibition.com/images/Eat-travel/eattravel_1171.jpg");
+}
+
+.box3 {
+  background-image: url("https://scontent.fbkk18-2.fna.fbcdn.net/v/t1.18169-9/12049144_758796190933109_1734791071920786197_n.jpg?_nc_cat=102&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeHe-Z58iLUT0eHheUVens0LUbFkEVNUxTpRsWQRU1TFOvEHteuOumYDGDL9XZEh9BGeRsJ3XgP5uii0oZxl_poG&_nc_ohc=dQSLI1_Wnl4AX-iBYgJ&tn=Ma_x4GBnmfxk-VkJ&_nc_ht=scontent.fbkk18-2.fna&oh=00_AfABa4pY0vQv_GMC1WuYJh1GE3AbrzVO3E0usnKxuPU-7g&oe=63F1CA52");
+}
+
+.box4 {
+  background-image: url("pic/bg1.png");
+}
+
+.text {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.txt h1 {
+  font-size: 7rem;
+  top: 90px;
+  position: relative;
+}
+
+.slide div {
+  transition: 0.5s;
+}
+
+.slide div:hover {
+  transition: 0.3s;
+  transform: translateY(-10px);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.slide{
+  display: none;
+}
+
+.carousel-button {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: 4%;
+  padding: 25px;
+  color: rgb(0, 0, 0);
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+  z-index: 5;
+  display: flex;
+}
+
+.next {
+  right: 20%;
+
+}
+.prev {
+  right: 76%;
+
+}
+.prev:hover, .next:hover {
+  background-color: rgba(116, 116, 116, 0.8);
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 20px;
+  margin-top: 40%;
+  background-color: rgb(155, 155, 155);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+  position: relative;
+
+  
+}
+.active, .dot:hover {
+  background-color: #717171;
+}
